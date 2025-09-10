@@ -25,12 +25,12 @@ public class Ejercicio1 {
         n3 = s.nextInt();
 
         if (n1 < n2 && n1 < n3) {
-            System.out.println("El menor es n1 que vale " +n1+ "." );
+            System.out.println("El menor es n1 que vale: " +n1+ "." );
         } else {
             if (n2 < n1 && n2 < n3) {
-                System.out.println("El menor es n2 que vale " +n2+ "." );
+                System.out.println("El menor es n2 que vale: " +n2+ "." );
         } else {
-                System.out.println("El menor es n3 que vale " +n3+ "." );
+                System.out.println("El menor es n3 que vale: " +n3+ "." );
                 }
         }
     }
