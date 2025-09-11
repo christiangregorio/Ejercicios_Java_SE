@@ -16,22 +16,22 @@ public class Ejercicio2 {
 
         Scanner s = new Scanner(System.in);
 
+        int contador = 0;
+        // Tambiénn puedo declarar las variables String frase y char letra al principio como "String frase, char letra..." y mas tarde solo darles el valor como frase=... letra=... 
+
         System.out.print("Escribe una frase: ");
         String frase = s.nextLine(); // La varuiable frase pertenece a la clase String y leeremos la siguiente linea.
 
         System.out.print("Escribe una letra: ");
         char letra = s.next().charAt(0); // Leemos una letra con chartAt para posicionarnos.
 
-        int contador = 0;
-
         for (int i = 0; i < frase.length(); i++) {
-            if (frase.charAt(i) == letra) { 
+            if (frase.charAt(i) == letra) {
                 contador++;
-                
+
             }
         }
 
-         System.out.println("El número de letras " + letra + " en esa frase es: " + contador);
-            }
-     }
-
+        System.out.println("El número de letras " + letra + " en esa frase es: " + contador);
+    }
+}

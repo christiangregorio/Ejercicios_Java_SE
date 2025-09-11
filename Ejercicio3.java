@@ -17,27 +17,28 @@ public class Ejercicio3 {
         Scanner s = new Scanner(System.in);
 
         double n1, n2;
-        double resultado;
+        String operador;
 
         System.out.println("Inserta el primer número: ");
         n1 = s.nextDouble();
 
-        System.out.println("Introduce el operador + ó - : ");
-        String operador = s.next();
+        do {
+            System.out.println("Introduce el operador + ó - : ");
+            operador = s.next();
+        } while (!(operador.equals("+") || operador.equals("-")));
 
         System.out.println("Inserta el segundo número: ");
         n2 = s.nextDouble();
 
         if (operador.equals("+")) {
-        resultado = n1 + n2;
-        System.out.println("Resultado de suma: " + (n1 + n2));
-        
+            System.out.println("Resultado de suma: " + (n1 + n2));
+
         } else if (operador.equals("-")) {
-        resultado = n1 - n2;
-        System.out.println("Resultado de suma: " + (n1 - n2));
+            System.out.println("Resultado de resta: " + (n1 - n2));
         }
-
     }
-
 }
 
+// Opción con resultado como variable:
+// Si voy a usar la variable resultado más de una vez, puedo declararlo como double resultado al inicio
+// y posteriormente en el if: resultado = n1 + n2, añadiendo en el println: + resultado
