@@ -16,15 +16,32 @@ public class Ejercicio4 {
 
         Scanner s = new Scanner(System.in);
 
-        String usuarioCorrecto;
-        String contraseñaCorrecta;
+        String usuario;
+        String contrasenia;
+        String usuarioCorrecto = "Christian";
+        String contraseniaCorrecta = "1234";
+        int intento = 0;
 
-        System.out.println("Usuario: ");
-                usuarioCorrecto = s.next();
-                
-                System.out.println("Contraseña: ");
-                contraseñaCorrecta = s.next();
-                
+        do {
+            System.out.print("Ingrese usuario: ");
+            usuario = s.nextLine();
 
+            System.out.print("Ingrese contraseña: ");
+            contrasenia = s.nextLine();
+
+            if (usuario.equals(usuarioCorrecto) && contrasenia.equals(contraseniaCorrecta)) {
+                System.out.println("¡Usuario y contraseña correctos!");
+                break;  // salir del bucle
+            } else {
+                System.out.println("Usuario o contraseña incorrectos.");
+                intento++;
+            }
+        } while (intento < 3);
+
+        if (intento == 3) {
+            System.out.println("Se han agotado los 3 intentos.");
+        }
     }
+
 }
+
