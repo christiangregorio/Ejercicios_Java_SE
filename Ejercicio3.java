@@ -15,6 +15,8 @@ public class Ejercicio3 {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
+        
+        // Suma o resta (según elija el usuario) dos números reales.
 
         double n1, n2;
         String operador;

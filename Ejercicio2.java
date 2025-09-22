@@ -16,6 +16,8 @@ public class Ejercicio2 {
 
         Scanner s = new Scanner(System.in);
 
+        //Solicita al usuario una frase y una letra y muestra la cantidad de veces que aparece la letra en la frase.
+        
         int contador = 0;
         // Tambiénn puedo declarar las variables String frase y char letra al principio como "String frase, char letra..." y mas tarde solo darles el valor como frase=... letra=... 
 
